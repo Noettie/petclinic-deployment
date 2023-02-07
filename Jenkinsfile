@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.445832677363.dkr.ecr.us-east-1.amazonaws.com/nottiey/petclinic --set image.tag=1'
+                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.cloudfreak.azurecr.io/cloudfreak/petclinic --set image.tag=1'
               			
             }           
         }
